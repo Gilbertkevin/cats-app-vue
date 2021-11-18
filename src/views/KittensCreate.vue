@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="kittenscreate">
     <h1>{{ message }}</h1>
   </div>
 </template>
@@ -10,10 +10,15 @@
   export default {
     data: function () {
       return {
-        message: "Welcome to C A T S!",
+        message: "Add a Kitten!",
+        newKitten: [],
       };
     },
     created: function () {},
-    methods: {},
+    methods: {
+      createKitten: function () {
+        console.log("Let's add a cat!")
+      }
+    },
   };
 </script>
